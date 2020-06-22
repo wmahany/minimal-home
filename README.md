@@ -3,7 +3,7 @@
 
 A simple startpage for any browser that support a custom startpage. Not tested on any mobile devices.
 
-*image*
+![Preview](prev/startpage.png "Screenshot 1")
 
 
 ### Features
