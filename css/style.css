@@ -1,45 +1,51 @@
+/* BASE COLOR SCHEME FOR THE STARTPAGE */
+:root{
+  --bg: #202020;
+  --bg2: #282828;
+  --bg3: #585858;
+  --fg: #e8e8e8;
+  --purple: #ba8baf;
+  --blue: #7cafc2;
+  --green: #a1b56c;
+  --orange: #dc9656;
+  --red: #ab4642;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "JetBrains mono", monospace;
-    color: #e8e8e8;
+    color: var(--fg);
     font-size: 13.5px;
   }
   
-  *** Works on common browsers ***/
+  /* SELECTION COLOR CHANGE */
   ::selection {
-      background-color: #ba8baf;
-      color: #fff;
+      background-color: var(--purple);
+      color: var(--fg);
   }
-  
-  /*** Mozilla based browsers ***/
   ::-moz-selection {
-      background-color: #ba8baf;
-      color: #fff;
+      background-color: var(--purple);
+      color: var(--fg);
   }
-  
-  /***For Other Browsers ***/
   ::-o-selection {
-      background-color: #ba8baf;
-      color: #fff;
+      background-color: var(--purple);
+      color: var(--fg);
   }
-  
   ::-ms-selection {
-      background-color: #ba8baf;
-      color: #fff;
+      background-color: var(--purple);
+      color: var(--fg);
   }
-  
-  /*** For Webkit ***/
   ::-webkit-selection {
-      background-color: #ba8baf;
-      color: #fff;
+      background-color: var(--purple);
+      color: var(--fg);
   }
 
   body {
     height: 100vh;
     width: 100vw;
-    background-color: #202020;
+    background-color: var(--bg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,20 +56,19 @@
     font-size: x-large;
     font-weight: 600;
     margin-bottom: 10px;
-    /* color: rgba(255, 250, 240, 0.897); */
     text-align: center;
   }
 
   #clock{
     text-align: center;
-    color: #e8e8e8;
+    color: var(--fg);
     font-size: 56px;
     font-weight: 800;
   }
 
   #date{
     text-align: center;
-    color: #e8e8e8;
+    color: var(--fg);
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 50px;
@@ -87,21 +92,21 @@
     min-width: 300px;
     padding: 50px;
     border-radius: 5px;
-    background-color: #282828;
+    background-color: var(--bg2);
   }
   
   .links-wrapper > .school-links h1{
     text-align: center;
-    background-color: #7cafc2;
+    background-color: var(--blue);
     padding: 5px;
     border-radius: 5px;
-    color: #202020;
+    color: var(--bg);
   }
 
   .links-wrapper > .school-links a.mid{
     text-align: center;
     text-decoration: none;
-    color: #e8e8e8;
+    color: var(--fg);
     opacity: 0.7;
     margin-bottom: 12px;
     font-size: medium;
@@ -109,7 +114,7 @@
   }
 
   .links-wrapper > .school-links a.mid:hover{
-    color: #7cafc2;
+    color: var(--blue);
     font-weight: 600;
     opacity: 1;
     cursor: default;
@@ -129,16 +134,16 @@
 
   .links-wrapper > .social-links h1{
     text-align: center;
-    background-color: #a1b56c;
+    background-color: var(--green);
     padding: 5px;
     border-radius: 5px;
-    color: #202020;
+    color: var(--bg);
   }
 
   .links-wrapper > .social-links a.mid{
     text-align: center;
     text-decoration: none;
-    color: #ecf0f1;
+    color: var(--fg);
     opacity: 0.7;
     margin-bottom: 12px;
     font-size: medium;
@@ -146,7 +151,7 @@
   }
 
   .links-wrapper > .social-links a.mid:hover{
-    color: #a1b56c;
+    color: var(--green);
     font-weight: 600;
     opacity: 1;
     cursor: default;
@@ -166,16 +171,16 @@
 
   .links-wrapper > .work-links h1{
     text-align: center;
-    background-color: #dc9656;
+    background-color: var(--orange);
     padding: 5px;
     border-radius: 5px;
-    color: #202020;
+    color: var(--bg);
   }
 
   .links-wrapper > .work-links a.mid{
     text-align: center;
     text-decoration: none;
-    color: #e8e8e8;
+    color: var(--fg);
     opacity: 0.7;
     margin-bottom: 12px;
     font-size: medium;
@@ -183,7 +188,7 @@
   }
 
   .links-wrapper > .work-links a.mid:hover{
-    color: #dc9656;
+    color: var(--orange);
     font-weight: 600;
     opacity: 1;
     cursor: default;
@@ -203,16 +208,16 @@
 
   .links-wrapper > .other-links h1{
     text-align: center;
-    background-color: #ab4642;
+    background-color: var(--red);
     padding: 5px;
     border-radius: 5px;
-    color: #202020;
+    color: var(--bg);
   }
 
   .links-wrapper > .other-links a.mid{
     text-align: center;
     text-decoration: none;
-    color: #ecf0f1;
+    color: var(--fg);
     opacity: 0.7;
     margin-bottom: 12px;
     font-size: medium;
@@ -220,7 +225,7 @@
   }
 
   .links-wrapper > .other-links a.mid:hover{
-    color: #ab4642;
+    color: var(--red);
     font-weight: 600;
     opacity: 1;
     cursor: default;
@@ -238,45 +243,7 @@
     transform: scaleX(0.5);
   }
 
-  /* .links-wrapper div:last-child {
-    margin-right: 0;
-  }
-  
-  .links-wrapper div a.mid {
-    text-align: center;
-    text-decoration: none;
-    color: #ecf0f1;
-    opacity: 0.7;
-    margin-bottom: 12px;
-    font-size: medium;
-    position: relative;
-  }
-
-   .links-wrapper div a.mid:hover{
-    color: #eceff4;
-    opacity: 1;
-    cursor: default;
-     transition: all 0.3s ease-in-out 0s;
-  } 
-
-  .links-wrapper div a.mid::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1.5px;
-    bottom: 0;
-    left: 0;
-    background-color: #eceff4;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
-  }
-
-  .links-wrapper div a.mid:hover::before {
-    visibility: visible;
-    transform: scaleX(0.5);
-  } */
-
+  /* SEARCH BOX STYLE */
   .searchBox {
     display: flex;
     align-items: center;
@@ -288,10 +255,10 @@
     border-right-style: none;
     border-left-style: none;
     border-bottom-style: none;
-    background: #282828;
+    background: var(--bg2);
     font-size: 15px;
     line-height: 1.5;
-    color: #585858;
+    color: var(--bg3);
     font-size: 20px;
     min-width: 600px;
     width: 620px;

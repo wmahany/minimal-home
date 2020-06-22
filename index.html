@@ -11,54 +11,60 @@
 	<i><div id="date"></div></i>
 
 	<div id="welcome"></div>
-
 	<script>
-		var today = new Date()
-		var curHr = today.getHours()
+		var today = new Date();
+		var curHr = today.getHours();
+
+		//Change the name here!
+		var name = "Isaac";
 	
 		if (curHr >= 0 && curHr < 6) {
 			document.getElementById("welcome").innerHTML = 'What are you doing that early?';
 		} else if (curHr >= 6 && curHr < 12) {
-			document.getElementById("welcome").innerHTML = 'Good Morning, Isaac';
+			document.getElementById("welcome").innerHTML = 'Good Morning, ' + name;
 		} else if (curHr >= 12 && curHr < 17) {
-			document.getElementById("welcome").innerHTML = 'Good Afternoon, Isaac';
+			document.getElementById("welcome").innerHTML = 'Good Afternoon, ' + name;
 		} else {
-			document.getElementById("welcome").innerHTML = 'Good Evening, Isaac';
+			document.getElementById("welcome").innerHTML = 'Good Evening, ' + name;
 		}
 	</script>
 
 	<div class="searchBox" id="searchBox">
 		<form action="https://duckduckgo.com/" method="get">
-			<input class="inputBox" id="searchInput" type="text" name="q" placeholder="Seach something..." tabIndex="2" autofocus/></form>
+			<input class="inputBox" id="searchInput" type="text" name="q" placeholder="Search something..." tabIndex="2" autofocus/></form>
 	</div>
 
 	<div class="links-wrapper">
 		<div class="school-links">
 			<h1>class</h1>
-			<a class="mid" href="https://classroom.google.com/u/0/h">Classroom</a>
+			<a class="mid" href="https://classroom.google.com/u/2/h">Classroom</a>
 			<a class="mid" href="https://meet.google.com/">Aula V.</a>
+			<a href="https://siiaa.mx/index.php/login/login_siiaa" class="mid">SIIA</a>
 			<a class="mid" href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
 		</div>
 
 		<div class="social-links">
 			<h1>social</h1>
+			<a class="mid" href="https://web.whatsapp.com/">WhatsApp</a>
 			<a class="mid" href="https://www.youtube.com/">YouTube</a>
-			<a class="mid" href="https://github.com/">GitHub</a>
-			<a class="mid" href="https://web.whatsapp.com/">Whatsapp</a>
+			<a href="https://www.reddit.com/" class="mid">Reddit</a>
+			<a href="https://twitter.com/home" class="mid">Twitter</a>
 		</div>
 
 		<div class="work-links">
 			<h1>work</h1>
-			<a class="mid" href="https://www.reddit.com/">Frontpage</a>
-			<a class="mid" href="https://www.reddit.com/r/linuxmasterrace/">r/linuxmasterrace</a>
-			<a class="mid" href="https://www.reddit.com/r/GetStudying/">r/GetStudying</a>
+			<a href="http://localhost/phpmyadmin/" class="mid">127.0.0.1</a>
+			<a class="mid" href="https://github.com/isaacsa51">GitHub</a>
+			<a class="mid" href="https://pixlr.com/x/">Pixlr</a>
+			<a href="#" class="mid"> </a>
 		</div>
 
 		<div class="other-links">
 			<h1>other</h1>
-			<a class="mid" href="http://pi.hole/admin">PiHole</a>
-			<a class="mid" href="http://192.168.0.107:9000">Portainer</a>
-			<a class="mid" href="http://192.168.0.107:9443">Blynk</a>
+			<a class="mid" href="https://aur.archlinux.org/">AUR</a>
+			<a class="mid" href="https://drive.google.com/">Drive</a>
+			<a class="mid" href="https://www.mediafire.com/#myfiles">Mediafire</a>
+			<a href="https://translate.google.com/" class="mid">Translate</a>
 		</div>
 	</>
 
