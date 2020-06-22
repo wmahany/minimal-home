@@ -56,5 +56,7 @@ The .html file contains several divs to accommodate the shortcuts of each sectio
 
 ## Credits
 [Base16](http://chriskempson.com/projects/base16/) color scheme.
+
 [/r/unixporn](https://www.reddit.com/r/unixporn/) involved me in the ricing area.
+
 [/r/startpages](https://www.reddit.com/r/startpages/) inspired me to create a custom startpage from scratch and publish it to the subreddit.
