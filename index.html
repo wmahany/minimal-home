@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<!-- STYLESHEET -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="clock"></div>
+	<i><div id="date"></div></i>
+
+	<div id="welcome"></div>
+
+	<script>
+		var today = new Date()
+		var curHr = today.getHours()
+	
+		if (curHr >= 0 && curHr < 6) {
+			document.getElementById("welcome").innerHTML = 'What are you doing that early?';
+		} else if (curHr >= 6 && curHr < 12) {
+			document.getElementById("welcome").innerHTML = 'Good Morning, Isaac';
+		} else if (curHr >= 12 && curHr < 17) {
+			document.getElementById("welcome").innerHTML = 'Good Afternoon, Isaac';
+		} else {
+			document.getElementById("welcome").innerHTML = 'Good Evening, Isaac';
+		}
+	</script>
+
+	<div class="searchBox" id="searchBox">
+		<form action="https://duckduckgo.com/" method="get">
+			<input class="inputBox" id="searchInput" type="text" name="q" placeholder="Seach something..." tabIndex="2" autofocus/></form>
+	</div>
+
+	<div class="links-wrapper">
+		<div class="school-links">
+			<h1>class</h1>
+			<a class="mid" href="https://classroom.google.com/u/0/h">Classroom</a>
+			<a class="mid" href="https://meet.google.com/">Aula V.</a>
+			<a class="mid" href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
+		</div>
+
+		<div class="social-links">
+			<h1>social</h1>
+			<a class="mid" href="https://www.youtube.com/">YouTube</a>
+			<a class="mid" href="https://github.com/">GitHub</a>
+			<a class="mid" href="https://web.whatsapp.com/">Whatsapp</a>
+		</div>
+
+		<div class="work-links">
+			<h1>work</h1>
+			<a class="mid" href="https://www.reddit.com/">Frontpage</a>
+			<a class="mid" href="https://www.reddit.com/r/linuxmasterrace/">r/linuxmasterrace</a>
+			<a class="mid" href="https://www.reddit.com/r/GetStudying/">r/GetStudying</a>
+		</div>
+
+		<div class="other-links">
+			<h1>other</h1>
+			<a class="mid" href="http://pi.hole/admin">PiHole</a>
+			<a class="mid" href="http://192.168.0.107:9000">Portainer</a>
+			<a class="mid" href="http://192.168.0.107:9443">Blynk</a>
+		</div>
+	</>
+
+	<script src="js/time.js"></script>
+	<script src="js/date.js"></script>
+</body>
+</html>
