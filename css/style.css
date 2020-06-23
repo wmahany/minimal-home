@@ -20,28 +20,6 @@
     font-size: 13.5px;
   }
   
-  /* SELECTION COLOR CHANGE */
-  ::selection {
-      background-color: var(--purple);
-      color: var(--fg);
-  }
-  ::-moz-selection {
-      background-color: var(--purple);
-      color: var(--fg);
-  }
-  ::-o-selection {
-      background-color: var(--purple);
-      color: var(--fg);
-  }
-  ::-ms-selection {
-      background-color: var(--purple);
-      color: var(--fg);
-  }
-  ::-webkit-selection {
-      background-color: var(--purple);
-      color: var(--fg);
-  }
-
   body {
     height: 100vh;
     width: 100vw;
@@ -55,7 +33,6 @@
   h1 {
     font-size: x-large;
     font-weight: 600;
-    margin-bottom: 10px;
     text-align: center;
   }
 
@@ -80,30 +57,55 @@
     margin-bottom: 20px;
   }
 
-  .links-wrapper {
-    display: flex;
+  /* Responsive items grid */
+  .container-items {
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    
+    grid-gap: 20px;
   }
   
-  .links-wrapper div {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    max-width: 500px;
-    min-width: 300px;
-    padding: 50px;
+  /* items */
+  .school-links{
+    background: var(--bg2);
+    color: var(--fg);
+    opacity: 0.7;
+    font-size: 20px;
     border-radius: 5px;
-    background-color: var(--bg2);
+    padding: 40px !important;
+    transition: all 0.2s ease-in-out 0s;
   }
-  
-  .links-wrapper > .school-links h1{
+
+  .school-links:hover{
+    -webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.15);
+  }
+
+  .school-links h1{
     text-align: center;
     background-color: var(--blue);
     padding: 5px;
+    margin-bottom: 20px;
     border-radius: 5px;
     color: var(--bg);
   }
 
-  .links-wrapper > .school-links a.mid{
+  .school-links ul{
+    list-style: none;
+    align-items: center;
+    text-align: center;
+  }
+
+  .school-links li{
+    margin: 10px;
+  }
+
+  .school-links a{
     text-align: center;
     text-decoration: none;
     color: var(--fg);
@@ -115,23 +117,50 @@
     transition: all 0.2s ease-in-out 0s;
   }
 
-  .links-wrapper > .school-links a.mid:hover{
+  .school-links a:hover{
     color: var(--blue);
     opacity: 1;
     cursor: default;
     font-weight: 600;
     cursor: pointer;
-  } 
+  }
 
-  .links-wrapper > .social-links h1{
+  .social-links{
+    background: var(--bg2);
+    color: var(--fg);
+    opacity: 0.7;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 40px !important;
+    transition: all 0.2s ease-in-out 0s;
+  }
+
+  .social-links:hover{
+    -webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.15);
+  }
+
+  .social-links h1{
     text-align: center;
     background-color: var(--green);
     padding: 5px;
+    margin-bottom: 20px;
     border-radius: 5px;
     color: var(--bg);
   }
 
-  .links-wrapper > .social-links a.mid{
+  .social-links ul{
+    list-style: none;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social-links li{
+    margin: 10px;
+  }
+
+  .social-links a{
     text-align: center;
     text-decoration: none;
     color: var(--fg);
@@ -143,50 +172,50 @@
     transition: all 0.2s ease-in-out 0s;
   }
 
-  .links-wrapper > .social-links a.mid:hover{
+  .social-links a:hover{
     color: var(--green);
     opacity: 1;
-    cursor: pointer;
+    cursor: default;
     font-weight: 600;
-  } 
-
-  .links-wrapper > .work-links h1{
-    text-align: center;
-    background-color: var(--orange);
-    padding: 5px;
-    border-radius: 5px;
-    color: var(--bg);
+    cursor: pointer;
   }
 
-  .links-wrapper > .work-links a.mid{
-    text-align: center;
-    text-decoration: none;
+  .work-links{
+    background: var(--bg2);
     color: var(--fg);
     opacity: 0.7;
-    margin-bottom: 12px;
-    font-size: medium;
-    position: relative;
-    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 40px !important;
     transition: all 0.2s ease-in-out 0s;
   }
 
-  .links-wrapper > .work-links a.mid:hover{
-    color: var(--orange);
-    opacity: 1;
-    cursor: pointer;
-    font-weight: 600;
-    cursor: pointer;
-  } 
+  .work-links:hover{
+    -webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.15);
+  }
 
-  .links-wrapper > .other-links h1{
+  .work-links h1{
     text-align: center;
     background-color: var(--red);
     padding: 5px;
+    margin-bottom: 20px;
     border-radius: 5px;
     color: var(--bg);
   }
 
-  .links-wrapper > .other-links a.mid{
+  .work-links ul{
+    list-style: none;
+    align-items: center;
+    text-align: center;
+  }
+
+  .work-links li{
+    margin: 10px;
+  }
+
+  .work-links a{
     text-align: center;
     text-decoration: none;
     color: var(--fg);
@@ -198,11 +227,67 @@
     transition: all 0.2s ease-in-out 0s;
   }
 
-  .links-wrapper > .other-links a.mid:hover{
+  .work-links a:hover{
     color: var(--red);
     opacity: 1;
     cursor: default;
     font-weight: 600;
+    cursor: pointer;
+  }
+
+  .other-links{
+    background: var(--bg2);
+    color: var(--fg);
+    opacity: 0.7;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 40px !important;
+    transition: all 0.2s ease-in-out 0s;
+  }
+
+  .other-links:hover{
+    -webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.15);
+  }
+
+  .other-links h1{
+    text-align: center;
+    background-color: var(--orange);
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: var(--bg);
+  }
+
+  .other-links ul{
+    list-style: none;
+    align-items: center;
+    text-align: center;
+  }
+
+  .other-links li{
+    margin: 10px;
+  }
+
+  .other-links a{
+    text-align: center;
+    text-decoration: none;
+    color: var(--fg);
+    opacity: 0.7;
+    margin-bottom: 12px;
+    font-size: medium;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
+  }
+
+  .other-links a:hover{
+    color: var(--orange);
+    opacity: 1;
+    cursor: default;
+    font-weight: 600;
+    cursor: pointer;
   }
 
   /* SEARCH BOX STYLE */
