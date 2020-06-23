@@ -69,7 +69,7 @@
   #date{
     text-align: center;
     color: var(--fg);
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 50px;
   }
@@ -111,26 +111,17 @@
     margin-bottom: 12px;
     font-size: medium;
     position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
   }
 
   .links-wrapper > .school-links a.mid:hover{
     color: var(--blue);
-    font-weight: 600;
     opacity: 1;
     cursor: default;
-    transition: all 0.3s ease-in-out 0s;
+    font-weight: 600;
+    cursor: pointer;
   } 
-
-  .links-wrapper > .school-links a.mid::before {
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
-  }
-
-  .links-wrapper > .school-links a.mid:hover::before {
-    visibility: visible;
-    transform: scaleX(0.5);
-  }
 
   .links-wrapper > .social-links h1{
     text-align: center;
@@ -148,26 +139,16 @@
     margin-bottom: 12px;
     font-size: medium;
     position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
   }
 
   .links-wrapper > .social-links a.mid:hover{
     color: var(--green);
-    font-weight: 600;
     opacity: 1;
-    cursor: default;
-    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    font-weight: 600;
   } 
-
-  .links-wrapper > .social-links a.mid::before {
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
-  }
-
-  .links-wrapper > .social-links a.mid:hover::before {
-    visibility: visible;
-    transform: scaleX(0.5);
-  }
 
   .links-wrapper > .work-links h1{
     text-align: center;
@@ -185,26 +166,17 @@
     margin-bottom: 12px;
     font-size: medium;
     position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
   }
 
   .links-wrapper > .work-links a.mid:hover{
     color: var(--orange);
-    font-weight: 600;
     opacity: 1;
-    cursor: default;
-    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    font-weight: 600;
+    cursor: pointer;
   } 
-
-  .links-wrapper > .work-links a.mid::before {
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
-  }
-
-  .links-wrapper > .work-links a.mid:hover::before {
-    visibility: visible;
-    transform: scaleX(0.5);
-  }
 
   .links-wrapper > .other-links h1{
     text-align: center;
@@ -222,25 +194,15 @@
     margin-bottom: 12px;
     font-size: medium;
     position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
   }
 
   .links-wrapper > .other-links a.mid:hover{
     color: var(--red);
-    font-weight: 600;
     opacity: 1;
     cursor: default;
-    transition: all 0.3s ease-in-out 0s;
-  } 
-
-  .links-wrapper > .other-links a.mid::before {
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
-  }
-
-  .links-wrapper > .other-links a.mid:hover::before {
-    visibility: visible;
-    transform: scaleX(0.5);
+    font-weight: 600;
   }
 
   /* SEARCH BOX STYLE */
