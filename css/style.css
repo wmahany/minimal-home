@@ -1,21 +1,21 @@
 /* BASE COLOR SCHEME FOR THE STARTPAGE */
 :root{
-  --bg: #202020;
-  --bg2: #282828;
-  --bg3: #585858;
-  --fg: #e8e8e8;
-  --purple: #ba8baf;
-  --blue: #7cafc2;
-  --green: #a1b56c;
-  --orange: #dc9656;
-  --red: #ab4642;
+  --bg: #2e3440;
+  --bg2: #3b4252;
+  --bg3: #6b748b;
+  --fg: #e5e9f0;
+  --purple: #b48ead;
+  --blue: #7dbeff;
+  --green: #a3be8c;
+  --orange: #ebcb8b;
+  --red: #bf616a;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "JetBrains mono", monospace;
+    font-family: "Iosevka", monospace;
     color: var(--fg);
     font-size: 13.5px;
   }
@@ -55,6 +55,7 @@
     text-align: center;
     font-size: 32px;
     margin-bottom: 20px;
+    font-style: italic !important;
   }
 
   /* Responsive items grid */
@@ -122,6 +123,7 @@
     opacity: 1;
     cursor: default;
     font-weight: 600;
+    font-style: italic;
     cursor: pointer;
   }
 
@@ -177,6 +179,7 @@
     opacity: 1;
     cursor: default;
     font-weight: 600;
+    font-style: italic;
     cursor: pointer;
   }
 
@@ -198,7 +201,7 @@
 
   .work-links h1{
     text-align: center;
-    background-color: var(--red);
+    background-color: var(--orange);
     padding: 5px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -228,10 +231,11 @@
   }
 
   .work-links a:hover{
-    color: var(--red);
+    color: var(--orange);
     opacity: 1;
     cursor: default;
     font-weight: 600;
+    font-style: italic;
     cursor: pointer;
   }
 
@@ -253,7 +257,7 @@
 
   .other-links h1{
     text-align: center;
-    background-color: var(--orange);
+    background-color: var(--red);
     padding: 5px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -283,10 +287,11 @@
   }
 
   .other-links a:hover{
-    color: var(--orange);
+    color: var(--red);
     opacity: 1;
     cursor: default;
     font-weight: 600;
+    font-style: italic;
     cursor: pointer;
   }
 
