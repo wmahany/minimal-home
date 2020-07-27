@@ -15,25 +15,25 @@ A simple startpage for any browser that support a custom startpage. On small scr
 
 - Preferred link shortcuts.
 
-- Base16 Theme that can be change in the `style.css` file under css folder.
+- Easy to customize theme that can be change in the `style.css` file.
 
 ### Customization
-All things can be changed based of the simplicity of this project, and obviously a nice documentation of the code.
+All things can be changed based of the simplicity of this project.
 
 `style.css` have all the style of the document like:
 
-- Theme: Base16 Tomorrow Night
+- Current theme: Nord/Atom One Dark mix
 
 ```
---bg: #202020;
---bg2: #282828;
---bg3: #585858;
---fg: #e8e8e8;
---purple: #ba8baf;
---blue: #7cafc2;
---green: #a1b56c;
---orange: #dc9656;
---red: #ab4642;
+--bg: #2e3440;
+--bg2: #3b4252;
+--bg3: #6b748b;
+--fg: #e5e9f0;
+--purple: #b48ead;
+--blue: #7dbeff;
+--green: #a3be8c;
+--orange: #ebcb8b;
+--red: #bf616a;
 ```
 
   
@@ -55,7 +55,7 @@ The .html file contains several divs to accommodate the shortcuts of each sectio
 ```
 
 ## Credits
-[Base16](http://chriskempson.com/projects/base16/) color scheme.
+[Nord theme](https://www.nordtheme.com/) color scheme.
 
 [/r/unixporn](https://www.reddit.com/r/unixporn/) involved me in the ricing area.
 
