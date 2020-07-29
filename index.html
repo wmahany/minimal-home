@@ -8,7 +8,7 @@
 	<!-- STYLESHEET -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="document.searchBox.searchInput.focus();">
 	<div id="clock"></div>
 	<div id="date"></div>
 
@@ -35,13 +35,6 @@
 		<form action="https://duckduckgo.com/" method="get">
 			<input class="inputBox" id="searchInput" type="text" name="q" placeholder="Search something..." tabIndex="2"/> </form>
 	</div>
-
-	<!-- Auto focus onto search bar -->
-	<script type="text/javascript">
-		
-		document.searchBox.searchInput.focus();
-		
-	</script>
 	
 	<!-- Shortcuts grid -->
 	<section class="container-items">
