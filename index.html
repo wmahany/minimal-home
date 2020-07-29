@@ -18,7 +18,7 @@
 		var curHr = today.getHours();
 
 		//Change the name here!
-		var name = "Bill";
+		var name = "Bill1";
 	
 		if (curHr >= 0 && curHr < 6) {
 			document.getElementById("welcome").innerHTML = 'What are you doing that early?';
@@ -33,9 +33,15 @@
 
 	<div class="searchBox" id="searchBox">
 		<form action="https://duckduckgo.com/" method="get">
-			<input class="inputBox" id="searchInput" type="text" name="q" placeholder="Search something..." tabIndex="2"  autofocus="autofocus" /> </form>
+			<input class="inputBox" id="searchInput" type="text" name="q" placeholder="Search something..." tabIndex="2"/> </form>
 	</div>
 
+	<!-- Auto focus onto search bar -->
+	<script 
+		type="text/javascript">document.action.inputBox.focus();
+		
+	</script>
+	
 	<!-- Shortcuts grid -->
 	<section class="container-items">
 		<div class="school-links">
