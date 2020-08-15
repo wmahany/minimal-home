@@ -4,11 +4,11 @@
   --bg2: #232627;
   --bg3: #6D7777;
   --fg: #D1D1D0;
-  --purple: #7d4f9b;
+  --purple: #834E98;
   --blue: #318ec0;
   --green: #1DB781;
   --orange: #c56105;
-  --red: #9a3025;
+  --red: #C51817;
 }
 
 * {
@@ -201,7 +201,7 @@
 
   .work-links h1{
     text-align: center;
-    background-color: var(--orange);
+    background-color: var(--red);
     padding: 5px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -231,7 +231,7 @@
   }
 
   .work-links a:hover{
-    color: var(--orange);
+    color: var(--red);
     opacity: 1;
     cursor: default;
     font-weight: 600;
@@ -257,7 +257,7 @@
 
   .other-links h1{
     text-align: center;
-    background-color: var(--red);
+    background-color: var(--orange);
     padding: 5px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -287,7 +287,7 @@
   }
 
   .other-links a:hover{
-    color: var(--red);
+    color: var(--orange);
     opacity: 1;
     cursor: default;
     font-weight: 600;
