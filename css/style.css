@@ -6,9 +6,9 @@
   --fg: #D1D1D0;
   --purple: #834E98;
   --blue: #318ec0;
-  --green: #1DB781;
+  --green: #198770;
   --orange: #c56105;
-  --red: #C51817;
+  --red: #198770;
 }
 
 * {
@@ -145,7 +145,7 @@
 
   .social-links h1{
     text-align: center;
-    background-color: var(--green);
+    background-color: var(--red);
     padding: 5px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -175,7 +175,7 @@
   }
 
   .social-links a:hover{
-    color: var(--green);
+    color: var(--red);
     opacity: 1;
     cursor: default;
     font-weight: 600;
@@ -201,7 +201,7 @@
 
   .work-links h1{
     text-align: center;
-    background-color: var(--red);
+    background-color: var(--green);
     padding: 5px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -231,7 +231,7 @@
   }
 
   .work-links a:hover{
-    color: var(--red);
+    color: var(--green);
     opacity: 1;
     cursor: default;
     font-weight: 600;
