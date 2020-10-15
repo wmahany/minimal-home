@@ -1,14 +1,16 @@
 /* BASE COLOR SCHEME FOR THE STARTPAGE */
 :root{
-  --bg: #232627;
-  --bg2: #232627;
-  --bg3: #6D7777;
-  --fg: #D1D1D0;
-  --purple: #834E98;
-  --blue: #318ec0;
-  --green: #198770;
-  --orange: #c56105;
-  --red: #A13528;
+  --bg: #282828;
+  --bg2: #1d2021;
+  --bg3: #665c54;
+  --fg: #ebdbb2;
+  --purple: #7e52c6;
+  --blue: #458588;
+  --green: #b8bb26;
+  --orange: #fe8019;
+  --red: #fb4934;
+
+
 }
 
 * {
